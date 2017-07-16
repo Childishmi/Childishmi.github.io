@@ -250,6 +250,205 @@
           </a>
         </li>
       
+
+
+<!-- 自定义High一下的功能 -->
+     <li class="menu-item"> <a title="High起来~" href='javascript:(
+   /*
+    * Copyright (C) 2016 Never_yu (Neveryu.github.io) <React.dong.yu@gmail.com>
+    * Sina Weibo (http://weibo.com/Neveryu)
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *      http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   function go() {
+   var songs = [
+   			   "http://oo30u7awh.bkt.clouddn.com/%E5%BC%A0%E6%9D%B0%20-%20%E6%88%91%E6%83%B3.mp3",
+   			   "http://oo30u7awh.bkt.clouddn.com/Louisa%20Wendorff,Devin%20Dawson%20-%20Blank%20Space%20%20Style%20%28feat.%20Devin%20Dawson%29.mp3",
+   			   "http://oo30u7awh.bkt.clouddn.com/%E5%BE%90%E6%B5%B7%E4%BF%8F%20-%20%E5%8D%97%E4%B8%8B.mp3",
+               "http://oo30u7awh.bkt.clouddn.com/%E4%BB%A5%E5%86%AC%20-%20%E7%AC%AC%E5%85%AB%E7%A7%8D%E6%A0%BC%E8%B0%83%E7%9A%84%E4%BA%BA%E7%94%9F.mp3",
+               "http://oo30u7awh.bkt.clouddn.com/%E5%85%B3%E6%A5%9A%E8%80%80%20-%20%E7%A9%BA%E6%B0%94%E5%85%AC%E5%9B%AD.mp3",
+               
+               "http://oo30u7awh.bkt.clouddn.com/%E6%A2%81%E5%87%A1%20-%20%E9%98%BF%E6%A5%9A%E5%A7%91%E5%A8%98.mp3"
+               
+   ];
+   
+   function c() {
+       var e = document.createElement("link");
+       e.setAttribute("type", "text/css");
+       e.setAttribute("rel", "stylesheet");
+       e.setAttribute("href", f);
+       e.setAttribute("class", l);
+       document.body.appendChild(e)
+   }
+   function h() {
+       var e = document.getElementsByClassName(l);
+       for (var t = 0; t < e.length; t++) {
+           document.body.removeChild(e[t])
+       }
+   }
+   function p() {
+       var e = document.createElement("div");
+       e.setAttribute("class", a);
+       document.body.appendChild(e);
+       setTimeout(function() {
+           document.body.removeChild(e)
+       }, 100)
+   }
+   function d(e) {
+       return {
+           height : e.offsetHeight,
+           width : e.offsetWidth
+       }
+   }
+   function v(i) {
+       var s = d(i);
+       return s.height > e && s.height < n && s.width > t && s.width < r
+   }
+   function m(e) {
+       var t = e;
+       var n = 0;
+       while (!!t) {
+           n += t.offsetTop;
+           t = t.offsetParent
+       }
+       return n
+   }
+   function g() {
+       var e = document.documentElement;
+       if (!!window.innerWidth) {
+           return window.innerHeight
+       } else if (e && !isNaN(e.clientHeight)) {
+           return e.clientHeight
+       }
+       return 0
+   }
+   function y() {
+       if (window.pageYOffset) {
+           return window.pageYOffset
+       }
+       return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+   }
+   function E(e) {
+       var t = m(e);
+       return t >= w && t <= b + w
+   }
+   function S() {
+       var e = document.getElementById("audio_element_id");
+       if(e != null){
+           var index = parseInt(e.getAttribute("curSongIndex"));
+           if(index > songs.length - 2) {
+               index = 0;
+           } else {
+               index++;
+           }
+           e.setAttribute("curSongIndex", index);
+           N();
+       }
+       e.src = i;
+       e.play()
+   }
+   function x(e) {
+       e.className += " " + s + " " + o
+   }
+   function T(e) {
+       e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+   }
+   function N() {
+       var e = document.getElementsByClassName(s);
+       var t = new RegExp("\\b" + s + "\\b");
+       for (var n = 0; n < e.length; ) {
+           e[n].className = e[n].className.replace(t, "")
+       }
+   }
+   function initAudioEle() {
+       var e = document.getElementById("audio_element_id");
+       if(e === null){
+           e = document.createElement("audio");
+           e.setAttribute("class", l);
+           e.setAttribute("curSongIndex", 0);
+           e.id = "audio_element_id";
+           e.loop = false;
+           e.bgcolor = 0;
+           e.addEventListener("canplay", function() {
+           setTimeout(function() {
+               x(k)
+           }, 500);
+           setTimeout(function() {
+               N();
+               p();
+               for (var e = 0; e < O.length; e++) {
+                   T(O[e])
+               }
+           }, 15500)
+       }, true);
+       e.addEventListener("ended", function() {
+           N();
+           h();
+           go();
+       }, true);
+       e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+       document.body.appendChild(e);
+       }
+   }
+   
+   initAudioEle();
+   var e = 30;
+   var t = 30;
+   var n = 350;
+   var r = 350;
+   var curSongIndex = parseInt(document.getElementById("audio_element_id").getAttribute("curSongIndex"));
+   var i = songs[curSongIndex];
+   
+   var s = "mw-harlem_shake_me";
+   var o = "im_first";
+   var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+   var a = "mw-strobe_light";
+   /* harlem-shake-style.css，替换成你的位置，也可以直接使用：//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css */
+   var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+   
+   var l = "mw_added_css";
+   var b = g();
+   var w = y();
+   var C = document.getElementsByTagName("*");
+   var k = null;
+   for (var L = 0; L < C.length; L++) {
+       var A = C[L];
+       if (v(A)) {
+           if (E(A)) {
+               k = A;
+               break
+           }
+       }
+   }
+   if (A === null) {
+       console.warn("Could not find a node of the right size. Please try a different page.");
+       return
+   }
+   c();
+   S();
+   var O = [];
+   for (var L = 0; L < C.length; L++) {
+       var A = C[L];
+       if (v(A)) {
+           O.push(A)
+       }
+   }
+   })()'><i class="menu-item-icon fa fa-music fa-fw"></i>High一下</a> </li>
+         <!-- end High一下 -->
+
+
+
+
     </ul>
   
 
@@ -331,7 +530,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-16T15:18:53+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-16T00:00:00+08:00">
                 2017-07-16
               </time>
             
@@ -341,6 +540,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -368,7 +589,8 @@
       
         
           
-            <h2 id="8种基本数据类型-๑•ω•̀๑）"><a href="#8种基本数据类型-๑•ω•̀๑）" class="headerlink" title="8种基本数据类型 (๑•ω•̀๑）"></a>8种基本数据类型 (๑•ω•̀๑）</h2><ul>
+            <hr>
+<h2 id="8种基本数据类型-๑•ω•̀๑）"><a href="#8种基本数据类型-๑•ω•̀๑）" class="headerlink" title="8种基本数据类型 (๑•ω•̀๑）"></a>8种基本数据类型 (๑•ω•̀๑）</h2><ul>
 <li>逻辑类型：boolean<br>整数类型：byte、short、int、long<br>字符类型：char<br>浮点类型：float、double </li>
 <li>long型常量用后缀L来表示<pre></pre></li>
 <li>float常量后面必须要有后缀f或F</li>
@@ -485,7 +707,17 @@ class Example2_5 {
     <div>
       
     </div>
+	
+	
+	
+	
+	<div>
+		
+	</div>
 
+
+	
+	
     <footer class="post-footer">
       
 
@@ -511,7 +743,7 @@ class Example2_5 {
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/16/初识Java_第一天_2017-7-15/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/15/初识Java_第一天_2017-7-15/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Childishmi">
@@ -530,7 +762,7 @@ class Example2_5 {
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/16/初识Java_第一天_2017-7-15/" itemprop="url">初识Java_第一天</a></h1>
+                <a class="post-title-link" href="/2017/07/15/初识Java_第一天_2017-7-15/" itemprop="url">初识Java_第一天</a></h1>
         
 
         <div class="post-meta">
@@ -542,8 +774,8 @@ class Example2_5 {
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-16T15:18:53+08:00">
-                2017-07-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-15T00:00:00+08:00">
+                2017-07-15
               </time>
             
 
@@ -552,6 +784,28 @@ class Example2_5 {
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -579,7 +833,8 @@ class Example2_5 {
       
         
           
-            <h2 id="特点-๑•ω•̀๑）"><a href="#特点-๑•ω•̀๑）" class="headerlink" title="特点 (๑•ω•̀๑）"></a>特点 (๑•ω•̀๑）</h2><ul>
+            <hr>
+<h2 id="特点-๑•ω•̀๑）"><a href="#特点-๑•ω•̀๑）" class="headerlink" title="特点 (๑•ω•̀๑）"></a>特点 (๑•ω•̀๑）</h2><ul>
 <li>Java与平台无关  （字节码由Java虚拟机负责解释运行，即Java虚拟机负责将字节码翻译成本地计算机的机器码，并将机器码交给本地的操作系统来运行。 ）</li>
 <li>多线程</li>
 <li>动态 （基本组成单元就是类，自己编写的+从类库中引入的，而类又是运行时动态装载的，这就使得Java可以在分布环境中动态地维护程序及类库。 ）</li>
@@ -665,7 +920,17 @@ class Student {
     <div>
       
     </div>
+	
+	
+	
+	
+	<div>
+		
+	</div>
 
+
+	
+	
     <footer class="post-footer">
       
 
@@ -735,15 +1000,24 @@ class Student {
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
           
             
             
             <div class="site-state-item site-state-tags">
-              
-                <span class="site-state-item-count">1</span>
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
-              
+              </a>
             </div>
           
 
@@ -925,7 +1199,7 @@ class Student {
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
@@ -1253,5 +1527,13 @@ class Student {
 
   
 
+  
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+
+<!-- 背景动画 -->
+<script type="text/javascript" src="/js/src/particle.js"></script>
+
+  
 </body>
 </html>
