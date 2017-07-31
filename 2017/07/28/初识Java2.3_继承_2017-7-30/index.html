@@ -89,7 +89,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="2017Summer,java," />
 
 
 
@@ -105,15 +105,17 @@
 
 
 
-<meta name="description" content="Childishmi&apos;s blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="All the way south">
-<meta property="og:url" content="http://yoursite.com/categories/java-Tips/index.html">
+<meta name="description" content="包权限default：同一个包里的其他类 能访问default自己的成员变量     访问权限修饰符 类内部 同一个包 子类 任何地方(其他package)     public yes yes yes yes   protected yes yes yes    default yes yes     private yes       eg:   public class TestAcces">
+<meta name="keywords" content="2017Summer,java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初识Java2.3_继承重写等">
+<meta property="og:url" content="http://yoursite.com/2017/07/28/初识Java2.3_继承_2017-7-30/index.html">
 <meta property="og:site_name" content="All the way south">
-<meta property="og:description" content="Childishmi&apos;s blog">
+<meta property="og:description" content="包权限default：同一个包里的其他类 能访问default自己的成员变量     访问权限修饰符 类内部 同一个包 子类 任何地方(其他package)     public yes yes yes yes   protected yes yes yes    default yes yes     private yes       eg:   public class TestAcces">
+<meta property="og:updated_time" content="2017-07-31T15:13:27.092Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="All the way south">
-<meta name="twitter:description" content="Childishmi&apos;s blog">
+<meta name="twitter:title" content="初识Java2.3_继承重写等">
+<meta name="twitter:description" content="包权限default：同一个包里的其他类 能访问default自己的成员变量     访问权限修饰符 类内部 同一个包 子类 任何地方(其他package)     public yes yes yes yes   protected yes yes yes    default yes yes     private yes       eg:   public class TestAcces">
 
 
 
@@ -141,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/java-Tips/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/28/初识Java2.3_继承_2017-7-30/"/>
 
 
 
 
 
-  <title>分类: java,Tips | All the way south</title>
+  <title>初识Java2.3_继承重写等 | All the way south</title>
   
 
 
@@ -172,7 +174,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -499,45 +501,374 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h1>java,Tips<small>分类</small>
-      </h1>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/28/初识Java2.2_Tips_2017-7-28/" itemprop="url">
-              
-                <span itemprop="name">初识Java2.2_Tips</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-28T00:00:00+08:00"
-              content="2017-07-28" >
-          07-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/28/初识Java2.3_继承_2017-7-30/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Childishmi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oo30u7awh.bkt.clouddn.com/%E5%A4%B4%E5%83%8F%E5%B0%8F%E5%9F%8B.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="All the way south">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">初识Java2.3_继承重写等</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-28T00:00:00+08:00">
+                2017-07-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  666
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <ul>
+<li>包权限default：同一个包里的其他类 能访问default自己的成员变量</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">访问权限修饰符</th>
+<th style="text-align:center">类内部</th>
+<th style="text-align:center">同一个包</th>
+<th style="text-align:center">子类</th>
+<th style="text-align:center">任何地方(其他package)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">public</td>
+<td style="text-align:center">yes</td>
+<td style="text-align:center">yes</td>
+<td style="text-align:center">yes</td>
+<td style="text-align:center">yes</td>
+</tr>
+<tr>
+<td style="text-align:center">protected</td>
+<td style="text-align:center">yes</td>
+<td style="text-align:center">yes</td>
+<td style="text-align:center">yes</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">default</td>
+<td style="text-align:center">yes</td>
+<td style="text-align:center">yes</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">private</td>
+<td style="text-align:center">yes</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>eg:</li>
+</ul>
+<pre><code>
+public class TestAccess {
+}
+
+class T {
+    private int i = 0;
+                    int j = 0;//默认default类型 default 包权限
+    protected int k = 0;
+    public int m = 0;
+
+    public void m() {
+        i = 9;
+    }
+}
+
+class TT {
+    public void m() {
+        T t = new T();
+        //System.out.println(t.i); 不行
+        System.out.println(t.j);
+    }
+}
+</code><pre>
+
+
+## 重写override
+
+重写的方法不能用比被重写的方法更严格的访问权限
+
+## super
+
+this-当前对象的引用
+super-当前对象的 父类对象的引用
+
+## 继承中的构造方法
+
+- 子类构造过程中必须调用基类的构造方法
+- 子类可在自己的构造方法中用super(argumnt_list)调用基类的构造方法
+ - 如果调用super，必须写在子类构造方法的第一行
+ - 使用this(argumnt_list)调用本类的另外的构造方法
+- 若子类的构造过程中没有显示地调用基类的构造方法，则系统默认调用基类无参数的构造方法
+- 若子类的构造过程中既没有显示地调用基类的构造方法，基类中又没有无参的构造方法，则error
+
+eg:
+
+<pre><code>
+
+class Person {
+  private String name;
+  private String location;
+
+  Person(String name) {
+    this.name = name;
+    location = "beijing";
+  }
+
+  Person(String name,String location) {
+    this.name = name;
+    this.location = location;
+  }
+
+  public String info() {
+    return "name: " + name + " location: " + location;
+  }
+}
+
+class Teacher extends Person {
+    private String capital;  //头衔
+
+    Teacher(String name, String capital) {
+        this(name, "beijing", capital);        //调用本类的另外的构造方法Teacher(String n, String l, String capital) {}
+    }
+
+    Teacher(String n, String l, String capital) {
+        super(n, l);        //调用基类的构造方法
+        this.capital = capital;
+    }
+
+    public String info() {
+        return super.info() + " capital: " + capital;
+    } 
+}
+
+public class TestTeacher {
+    public static void main(String[] args) {      
+        Teacher t1 = new Teacher("D", "Professor");
+        System.out.println(t1.info());
+    }
+}
+
+name: D location: beijing capital: Professor
+</code></pre>
+
+<h2 id="Object类"><a href="#Object类" class="headerlink" title="Object类"></a>Object类</h2><p>E:\jdk1.8\jre\lib\rt.jar\java\lang\Object.class<br>Object类是所有类的根基类</p>
+<h2 id="JDK-API文档查询"><a href="#JDK-API文档查询" class="headerlink" title="JDK_API文档查询"></a>JDK_API文档查询</h2><p><a href="http://java.sun.com" target="_blank" rel="external">http://java.sun.com</a><br><a href="http://docs.oracle.com/javase/8/docs/api/index.html" target="_blank" rel="external">http://docs.oracle.com/javase/8/docs/api/index.html</a><br>J2SE 5.0 Documentation -&gt;download<br>javadocs-index.html首页-API&amp;Language-API（应用程序编程接口） Specification<br>Constructor Summary（构造方法）</p>
+<p>哈希编码：独一无二地表示一个对象，并且通过哈希编码可以找到这个对象所在的位置</p>
+<p>Object类_equals：x.equals(y) 自反、对称、传递、永恒、非空引用值x,y当且仅当x==y（即指向同一对象）时返回true</p>
+<p>重写equals方法</p>
+<pre><code>
+public boolean equals(Object obj){  //override时记得copy下来  父类引用指向子类对象
+    if(obj==null) return false;
+    else{
+        if(obj instanceof Cat){  //如果obj是Cat对象的一个引用
+            Cat c = (Cat) obj;  //把obj强制转换为猫的类型
+            if(c.color==this.color&&c.weight==this.weight&&c.height==this.height) 
+                return true;
+        }  
+    }
+    return false;
+}
+</code></pre></pre></pre>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+	
+	
+	
+	
+	<div>
+		
+			
+		
+	</div>
+
+
+	
+	
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/2017Summer/" rel="tag"># 2017Summer</a>
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/28/初识Java2.2_Tips_2017-7-28/" rel="next" title="初识Java2.2_Tips">
+                <i class="fa fa-chevron-left"></i> 初识Java2.2_Tips
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/31/好像世界安静了/" rel="prev" title="一闪一闪亮晶晶">
+                一闪一闪亮晶晶 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -545,6 +876,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -565,8 +900,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://oo30u7awh.bkt.clouddn.com/%E5%A4%B4%E5%83%8F%E5%B0%8F%E5%9F%8B.jpg"
@@ -628,6 +972,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Object类"><span class="nav-number">1.</span> <span class="nav-text">Object类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDK-API文档查询"><span class="nav-number">2.</span> <span class="nav-text">JDK_API文档查询</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -761,10 +1121,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 

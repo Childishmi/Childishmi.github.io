@@ -105,17 +105,17 @@
 
 
 
-<meta name="description" content="Tips for ‘package &amp;amp;&amp;amp; import’情景 //Cat.java package com.bjsxt.java140; public class Cat{}    //若此public不写则编译Dog.java时 用Cat 会报错! (默认为protected)    Error &amp;amp;&amp;amp; Solution✿Q1：E:\chapter1\testpac">
+<meta name="description" content="Tips for ‘package &amp;amp;&amp;amp; import’情景 //Cat.java package com.bjsxt.java140; public class Cat{}    //若此public不写则编译Dog.java时 用Cat 会报错: com.bjsxt.java140.Cat在com.bjsxt.java140中不是公共的，无法从外部软件包对其进行访问 (默认为d">
 <meta name="keywords" content="2017Summer,java,Tips,package">
 <meta property="og:type" content="article">
 <meta property="og:title" content="初识Java2.2_Tips">
 <meta property="og:url" content="http://yoursite.com/2017/07/28/初识Java2.2_Tips_2017-7-28/index.html">
 <meta property="og:site_name" content="All the way south">
-<meta property="og:description" content="Tips for ‘package &amp;amp;&amp;amp; import’情景 //Cat.java package com.bjsxt.java140; public class Cat{}    //若此public不写则编译Dog.java时 用Cat 会报错! (默认为protected)    Error &amp;amp;&amp;amp; Solution✿Q1：E:\chapter1\testpac">
-<meta property="og:updated_time" content="2017-07-28T09:35:24.651Z">
+<meta property="og:description" content="Tips for ‘package &amp;amp;&amp;amp; import’情景 //Cat.java package com.bjsxt.java140; public class Cat{}    //若此public不写则编译Dog.java时 用Cat 会报错: com.bjsxt.java140.Cat在com.bjsxt.java140中不是公共的，无法从外部软件包对其进行访问 (默认为d">
+<meta property="og:updated_time" content="2017-07-30T07:18:04.446Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初识Java2.2_Tips">
-<meta name="twitter:description" content="Tips for ‘package &amp;amp;&amp;amp; import’情景 //Cat.java package com.bjsxt.java140; public class Cat{}    //若此public不写则编译Dog.java时 用Cat 会报错! (默认为protected)    Error &amp;amp;&amp;amp; Solution✿Q1：E:\chapter1\testpac">
+<meta name="twitter:description" content="Tips for ‘package &amp;amp;&amp;amp; import’情景 //Cat.java package com.bjsxt.java140; public class Cat{}    //若此public不写则编译Dog.java时 用Cat 会报错: com.bjsxt.java140.Cat在com.bjsxt.java140中不是公共的，无法从外部软件包对其进行访问 (默认为d">
 
 
 
@@ -594,7 +594,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  965
+                  1,008
                 </span>
               
 
@@ -631,7 +631,7 @@
         <h1 id="Tips-for-‘package-amp-amp-import’"><a href="#Tips-for-‘package-amp-amp-import’" class="headerlink" title="Tips for ‘package &amp;&amp; import’"></a>Tips for ‘package &amp;&amp; import’</h1><h2 id="情景"><a href="#情景" class="headerlink" title="情景"></a>情景</h2><pre><code>
 //Cat.java
 package com.bjsxt.java140;
-public class Cat{}    //若此public不写则编译Dog.java时 用Cat 会报错! (默认为protected)
+public class Cat{}    //若此public不写则编译Dog.java时 用Cat 会报错: com.bjsxt.java140.Cat在com.bjsxt.java140中不是公共的，无法从外部软件包对其进行访问 (默认为default包权限，同一个包里的其他类能访问Cat)
 </code></pre>
 
 <hr>
@@ -808,6 +808,10 @@ E:\chapter1\testpackage>jar -cvf test.jar *
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2017/07/28/初识Java2.3_继承_2017-7-30/" rel="prev" title="初识Java2.3_继承重写等">
+                初识Java2.3_继承重写等 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -879,7 +883,7 @@ E:\chapter1\testpackage>jar -cvf test.jar *
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -890,7 +894,7 @@ E:\chapter1\testpackage>jar -cvf test.jar *
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -901,7 +905,7 @@ E:\chapter1\testpackage>jar -cvf test.jar *
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -997,7 +1001,7 @@ E:\chapter1\testpackage>jar -cvf test.jar *
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共7.8k字</span>
+  <span class="post-count">博客全站共12.3k字</span>
 </div>
         
 
