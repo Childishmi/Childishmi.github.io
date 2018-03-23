@@ -89,7 +89,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="2017Summer,java," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -105,17 +105,16 @@
 
 
 
-<meta name="description" content="特点 (๑•ω•̀๑） Java与平台无关  （字节码由Java虚拟机负责解释运行，即Java虚拟机负责将字节码翻译成本地计算机的机器码，并将机器码交给本地的操作系统来运行。 ） 多线程 动态 （基本组成单元就是类，自己编写的+从类库中引入的，而类又是运行时动态装载的，这就使得Java可以在分布环境中动态地维护程序及类库。 ）   安装+配置环境变量      (๑´ㅂ`๑) Java SE平台">
-<meta name="keywords" content="2017Summer,java">
+<meta name="description" content="异常处理异常：运行期出现的错误 缓冲期溢出的漏洞-C数组下标越界Java-java.lang-Exceptions-ArrayIndexOutOfBoundsException 捕获 try{    //有可能产生异常的语句    System.out.println(1/0);} catch (ArithmeticException ae){    //遇到这异常该怎么办 ,自己定义逮到的异常对">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初识Java_第一天">
-<meta property="og:url" content="http://yoursite.com/2017/07/15/初识Java_第一天_2017-7-15/index.html">
+<meta property="og:title" content="All the way south">
+<meta property="og:url" content="http://yoursite.com/2017/08/02/初识Java2.4_异常处理_2017-8-2/index.html">
 <meta property="og:site_name" content="All the way south">
-<meta property="og:description" content="特点 (๑•ω•̀๑） Java与平台无关  （字节码由Java虚拟机负责解释运行，即Java虚拟机负责将字节码翻译成本地计算机的机器码，并将机器码交给本地的操作系统来运行。 ） 多线程 动态 （基本组成单元就是类，自己编写的+从类库中引入的，而类又是运行时动态装载的，这就使得Java可以在分布环境中动态地维护程序及类库。 ）   安装+配置环境变量      (๑´ㅂ`๑) Java SE平台">
-<meta property="og:updated_time" content="2017-07-16T07:40:24.829Z">
+<meta property="og:description" content="异常处理异常：运行期出现的错误 缓冲期溢出的漏洞-C数组下标越界Java-java.lang-Exceptions-ArrayIndexOutOfBoundsException 捕获 try{    //有可能产生异常的语句    System.out.println(1/0);} catch (ArithmeticException ae){    //遇到这异常该怎么办 ,自己定义逮到的异常对">
+<meta property="og:updated_time" content="2017-08-03T07:30:33.498Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初识Java_第一天">
-<meta name="twitter:description" content="特点 (๑•ω•̀๑） Java与平台无关  （字节码由Java虚拟机负责解释运行，即Java虚拟机负责将字节码翻译成本地计算机的机器码，并将机器码交给本地的操作系统来运行。 ） 多线程 动态 （基本组成单元就是类，自己编写的+从类库中引入的，而类又是运行时动态装载的，这就使得Java可以在分布环境中动态地维护程序及类库。 ）   安装+配置环境变量      (๑´ㅂ`๑) Java SE平台">
+<meta name="twitter:title" content="All the way south">
+<meta name="twitter:description" content="异常处理异常：运行期出现的错误 缓冲期溢出的漏洞-C数组下标越界Java-java.lang-Exceptions-ArrayIndexOutOfBoundsException 捕获 try{    //有可能产生异常的语句    System.out.println(1/0);} catch (ArithmeticException ae){    //遇到这异常该怎么办 ,自己定义逮到的异常对">
 
 
 
@@ -143,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/15/初识Java_第一天_2017-7-15/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/02/初识Java2.4_异常处理_2017-8-2/"/>
 
 
 
 
 
-  <title>初识Java_第一天 | All the way south</title>
+  <title> | All the way south</title>
   
 
 
@@ -511,7 +510,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/15/初识Java_第一天_2017-7-15/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/02/初识Java2.4_异常处理_2017-8-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Childishmi">
@@ -528,7 +527,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">初识Java_第一天</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -540,8 +539,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-15T00:00:00+08:00">
-                2017-07-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-02T15:12:31+08:00">
+                2017-08-02
               </time>
             
 
@@ -550,28 +549,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -594,7 +571,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  689
+                  441
                 </span>
               
 
@@ -610,7 +587,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  3
+                  2
                 </span>
               
             </div>
@@ -628,76 +605,68 @@
       
 
       
-        <hr>
-<h2 id="特点-๑•ω•̀๑）"><a href="#特点-๑•ω•̀๑）" class="headerlink" title="特点 (๑•ω•̀๑）"></a>特点 (๑•ω•̀๑）</h2><ul>
-<li>Java与平台无关  （字节码由Java虚拟机负责解释运行，即Java虚拟机负责将字节码翻译成本地计算机的机器码，并将机器码交给本地的操作系统来运行。 ）</li>
-<li>多线程</li>
-<li>动态 （基本组成单元就是类，自己编写的+从类库中引入的，而类又是运行时动态装载的，这就使得Java可以在分布环境中动态地维护程序及类库。 ）</li>
-</ul>
-<hr>
-<h2 id="安装-配置环境变量-๑´ㅂ-๑"><a href="#安装-配置环境变量-๑´ㅂ-๑" class="headerlink" title="安装+配置环境变量      (๑´ㅂ`๑)"></a>安装+配置环境变量      (๑´ㅂ`๑)</h2><ul>
-<li>Java SE平台</li>
-<li>百度搜素“[jdk1.8官方下载][1]” 选择适合版本 jdk-8u131-windows-x64.exe   </li>
-<li>选择安装路径界面。 （为了便于今后设置环境变量，修改默认的安装路径为：E:\jdk1.8 ）</li>
-<li>JDK平台提供的Java编译器（javac.exe）和Java解释器（java.exe）位于Java安装目录的\bin文件夹中.</li>
-<li>右键“计算机”-“属性”-“系统特性”-“高级属性设置”-“环境变量”-添加系统环境变量JAVA_HOME，让该环境变量的值是JDK目录结构的根目录，例如E:\jdk1.8</li>
-<li>“环境变量”-“系统变量(S)”-path-“编辑(I) ”-%JAVA_HOME%\bin;C…………</li>
-</ul>
-<hr>
-<h2 id="开发步骤-٩-๑❛ᴗ❛๑-۶"><a href="#开发步骤-٩-๑❛ᴗ❛๑-۶" class="headerlink" title="开发步骤   ٩(๑❛ᴗ❛๑)۶"></a>开发步骤   ٩(๑❛ᴗ❛๑)۶</h2><ol>
-<li>编写源文件:扩展名必须是 .java。 </li>
-<li>编译Java源程序:用Java编译器（javac.exe）编译源文件，得到字节码文件。 </li>
-<li>运行Java程序:使用Java解释器（java.exe）来解释执行字节码文件。</li>
-</ol>
-<hr>
-<h2 id="实战1-•-̀ω•́"><a href="#实战1-•-̀ω•́" class="headerlink" title="实战1  ( • ̀ω•́ )"></a>实战1  ( • ̀ω•́ )</h2><p>eg1：</p>
-<ul>
-<li>用文本编辑器编辑代码。</li>
-<li>如果源文件中有多个类，那么只能有一个类是public类；如果有一个类是public类，那么源文件的名字必须与这个类的名字完全相同，扩展名是java。</li>
-<li><p>一个Java应用程序必须有一个类含有<code>public static void main（String args[ ]）</code>方法，称这个类是应用程序的主类。</p>
-</li>
-<li><p>Hello.java是由两个名字分别为Hello和Student的类组成。 </p>
-</li>
-<li>Hello.java。我们将Hello.java保存到E:\chapter1文件夹中。 </li>
-</ul>
-<pre><code>
-public class Hello {
-    public static void main (String args[]) {
-      System.out.println("大家好!");
-      System.out.println("Nice to meet you");
-      Student stu = new Student();
-      stu.speak("We are students");
-   }
-}
-class Student {
-    public void speak(String s) {
-      System.out.println(s);
+        <h1 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h1><p>异常：运行期出现的错误</p>
+<p>缓冲期溢出的漏洞-C数组下标越界<br>Java-java.lang-Exceptions-ArrayIndexOutOfBoundsException</p>
+<p>捕获</p>
+<p>try{    //有可能产生异常的语句<br>    System.out.println(1/0);<br>} catch (ArithmeticException ae){    //遇到这异常该怎么办 ,自己定义逮到的异常对象的名字ae<br>    System.out.println(“系统正在维护中”);<br>    ae.printStackTrace();        //出错误的堆栈信息，全给你打印出来<br>}</p>
+<p>系统正在维护中<br>java.lang.ArithmeticException: / by zero<br>        at TestEx.main(TestEx.java:4)</p>
+<p>java.lang - Exceptions - class Throwable(可被抛出的)<br>                                子类 - Error（系统的错误/虚拟机出错了/咱处理不了的错误）</p>
+<pre><code>- Exception（咱可处理的错误）
+  - RuntimeException（运行时出的错，产生的很频繁，一直处理太累，可catch，可不catch）
+  - 其他 （比如写了throws IOException,它是java.lang.Exception的子类，必须catch）
+</code></pre><p>finally 后的语句一定会执行，进行资源的清除工作</p>
+<p><code>main() throws Exception{}    //    任何方法都能throws Exception，但main抛也太不负责了..交给运行时系统，堆栈把错误信息打印出来</code></p>
+<p>public class TestEx {<br>    public static void main(String[] args) {<br>        try{<br>        new TestEx().f2();<br>        } catch(IOException e){<br>            e.printStackTrace();<br>        }</p>
+<pre><code>    FileInputStream in = null;
+    try{
+        in = new FileInputStream(&quot;myfile.txt&quot;);
+        int b;
+        b = in.read();
+        while(b!=-1){
+            System.out.println((char)b);
+            b = in.read();
+        }
+    } catch (FileNotFoundException e) {        //先小
+        e.printStackTrace();
+    } catch (IOException e){            //后大
+        System.out.println(e.getMessage());
+    } finally {
+        try{
+            in.close();
+        } catch(IOException e){
+            e.printStackTrace();
+        }
     }
-} 
-</code></pre>
+}
 
+void m(int i) throws ArithmeticException{        //throws
+    if(i==0) 
+        throw new ArithmeticException(&quot;divided by 0&quot;);    //throw
+}
 
-<ul>
-<li>E:\chapter1&gt; javac Hello.java （使用javac编译源文件）</li>
-<li>E:\chapter1> java Hello   （使用java解释器运行程序）</li>
-</ul>
-<hr>
-<h2 id="反编译-٩-๑❛ᴗ❛๑-۶"><a href="#反编译-٩-๑❛ᴗ❛๑-۶" class="headerlink" title="反编译   ٩(๑❛ᴗ❛๑)۶"></a>反编译   ٩(๑❛ᴗ❛๑)۶</h2><ul>
-<li>JDK提供的反编译器是javap.exe</li>
-<li>如果想反编译例子1中的Hello.class，可使用javap命令：javap Hello.class ，例如：<br>E:\chapter1> javap Hello.class</li>
-<li>如果想反编译类库中的Date类（其包名是java.util）Date.class，可使用javap命令：javap java.util.Date.class，例如：<br>E:\chapter1> javap  java.util.Date.class</li>
-</ul>
-<hr>
-<h2 id="其它-๑•ω•̀๑）"><a href="#其它-๑•ω•̀๑）" class="headerlink" title="其它 (๑•ω•̀๑）"></a>其它 (๑•ω•̀๑）</h2><ul>
-<li>单行注释 //</li>
-<li>多行注释 /<em>    </em>/</li>
-</ul>
-<hr>
-<h2 id="体验٩-•̤̀ᵕ•̤́๑"><a href="#体验٩-•̤̀ᵕ•̤́๑" class="headerlink" title="体验٩(•̤̀ᵕ•̤́๑)"></a>体验٩(•̤̀ᵕ•̤́๑)</h2><ul>
-<li>下载安装+配置环境变量比较麻烦</li>
-<li>cmd写+编译+跑出第一个Java还是很神奇的</li>
-<li>加油</li>
-</ul>
+void f() throws FileNotFoundException,IOException{        //处理不了异常，往外抛就行
+FileInputStream in = new FileInputStream(&quot;myfile.txt&quot;);
+int b;
+b = in.read();
+while(b!=-1){
+    System.out.println((char)b);
+    b = in.read();
+}
+
+void f2() throws IOException{
+    /*
+    try{
+        f();
+    } catch(FileNotFoundException e){
+        System.out.println(e.getMessage());
+    } catch(IOException e){
+        e.printStackTrace();
+    }
+    */
+    f();
+}
+</code></pre><p>}</p>
+<p>自定义异常<br>重写方法需要抛出与原方法所抛出异常类型一致异常/不抛出异常</p>
 
       
     </div>
@@ -737,14 +706,6 @@ class Student {
 	
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/2017Summer/" rel="tag"># 2017Summer</a>
-          
-            <a href="/tags/java/" rel="tag"># java</a>
-          
-        </div>
-      
 
       
       
@@ -754,15 +715,15 @@ class Student {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/07/28/初识Java2.2_Tips_2017-7-28/" rel="next" title="初识Java2.2_Tips">
+                <i class="fa fa-chevron-left"></i> 初识Java2.2_Tips
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/16/初识Java_第二天2_2017-7-16/" rel="prev" title="初识Java_第二天2">
-                初识Java_第二天2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -892,7 +853,7 @@ class Student {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#特点-๑•ω•̀๑）"><span class="nav-number">1.</span> <span class="nav-text">特点 (๑•ω•̀๑）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-配置环境变量-๑´ㅂ-๑"><span class="nav-number">2.</span> <span class="nav-text">安装+配置环境变量      (๑´ㅂ`๑)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发步骤-٩-๑❛ᴗ❛๑-۶"><span class="nav-number">3.</span> <span class="nav-text">开发步骤   ٩(๑❛ᴗ❛๑)۶</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实战1-•-̀ω•́"><span class="nav-number">4.</span> <span class="nav-text">实战1  ( • ̀ω•́ )</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反编译-٩-๑❛ᴗ❛๑-۶"><span class="nav-number">5.</span> <span class="nav-text">反编译   ٩(๑❛ᴗ❛๑)۶</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它-๑•ω•̀๑）"><span class="nav-number">6.</span> <span class="nav-text">其它 (๑•ω•̀๑）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#体验٩-•̤̀ᵕ•̤́๑"><span class="nav-number">7.</span> <span class="nav-text">体验٩(•̤̀ᵕ•̤́๑)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#异常处理"><span class="nav-number">1.</span> <span class="nav-text">异常处理</span></a></li></ol></div>
             
 
           </div>

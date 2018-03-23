@@ -105,17 +105,17 @@
 
 
 
-<meta name="description" content="包权限default：同一个包里的其他类 能访问default自己的成员变量     访问权限修饰符 类内部 同一个包 子类 任何地方(其他package)     public yes yes yes yes   protected yes yes yes    default yes yes     private yes       eg:   public class TestAcces">
+<meta name="description" content="继承重写多态接口等访问权限 包权限default：同一个包里的其他类 能访问default自己的成员变量     访问权限修饰符 类内部 同一个包 子类 任何地方(其他package)     public yes yes yes yes   protected yes yes yes    default yes yes     private yes       eg:   public cl">
 <meta name="keywords" content="2017Summer,java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初识Java2.3_继承重写等">
+<meta property="og:title" content="初识Java2.3_继承重写多态接口等">
 <meta property="og:url" content="http://yoursite.com/2017/07/28/初识Java2.3_继承_2017-7-30/index.html">
 <meta property="og:site_name" content="All the way south">
-<meta property="og:description" content="包权限default：同一个包里的其他类 能访问default自己的成员变量     访问权限修饰符 类内部 同一个包 子类 任何地方(其他package)     public yes yes yes yes   protected yes yes yes    default yes yes     private yes       eg:   public class TestAcces">
-<meta property="og:updated_time" content="2017-07-31T15:13:27.092Z">
+<meta property="og:description" content="继承重写多态接口等访问权限 包权限default：同一个包里的其他类 能访问default自己的成员变量     访问权限修饰符 类内部 同一个包 子类 任何地方(其他package)     public yes yes yes yes   protected yes yes yes    default yes yes     private yes       eg:   public cl">
+<meta property="og:updated_time" content="2017-08-02T02:17:46.453Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初识Java2.3_继承重写等">
-<meta name="twitter:description" content="包权限default：同一个包里的其他类 能访问default自己的成员变量     访问权限修饰符 类内部 同一个包 子类 任何地方(其他package)     public yes yes yes yes   protected yes yes yes    default yes yes     private yes       eg:   public class TestAcces">
+<meta name="twitter:title" content="初识Java2.3_继承重写多态接口等">
+<meta name="twitter:description" content="继承重写多态接口等访问权限 包权限default：同一个包里的其他类 能访问default自己的成员变量     访问权限修饰符 类内部 同一个包 子类 任何地方(其他package)     public yes yes yes yes   protected yes yes yes    default yes yes     private yes       eg:   public cl">
 
 
 
@@ -149,7 +149,7 @@
 
 
 
-  <title>初识Java2.3_继承重写等 | All the way south</title>
+  <title>初识Java2.3_继承重写多态接口等 | All the way south</title>
   
 
 
@@ -528,7 +528,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">初识Java2.3_继承重写等</h1>
+          <h1 class="post-title" itemprop="name headline">初识Java2.3_继承重写多态接口等</h1>
         
 
         <div class="post-meta">
@@ -594,7 +594,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  666
+                  1,233
                 </span>
               
 
@@ -610,7 +610,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  3
+                  5
                 </span>
               
             </div>
@@ -628,7 +628,7 @@
       
 
       
-        <ul>
+        <h1 id="继承重写多态接口等"><a href="#继承重写多态接口等" class="headerlink" title="继承重写多态接口等"></a>继承重写多态接口等</h1><h2 id="访问权限"><a href="#访问权限" class="headerlink" title="访问权限"></a>访问权限</h2><ul>
 <li>包权限default：同一个包里的其他类 能访问default自己的成员变量</li>
 </ul>
 <table>
@@ -698,15 +698,20 @@ class TT {
 }
 </code><pre>
 
+-------
 
-## 重写override
+## 重写override/overwrite
 
 重写的方法不能用比被重写的方法更严格的访问权限
+
+-------
 
 ## super
 
 this-当前对象的引用
 super-当前对象的 父类对象的引用
+
+-------
 
 ## 继承中的构造方法
 
@@ -767,13 +772,21 @@ public class TestTeacher {
 name: D location: beijing capital: Professor
 </code></pre>
 
+<hr>
 <h2 id="Object类"><a href="#Object类" class="headerlink" title="Object类"></a>Object类</h2><p>E:\jdk1.8\jre\lib\rt.jar\java\lang\Object.class<br>Object类是所有类的根基类</p>
-<h2 id="JDK-API文档查询"><a href="#JDK-API文档查询" class="headerlink" title="JDK_API文档查询"></a>JDK_API文档查询</h2><p><a href="http://java.sun.com" target="_blank" rel="external">http://java.sun.com</a><br><a href="http://docs.oracle.com/javase/8/docs/api/index.html" target="_blank" rel="external">http://docs.oracle.com/javase/8/docs/api/index.html</a><br>J2SE 5.0 Documentation -&gt;download<br>javadocs-index.html首页-API&amp;Language-API（应用程序编程接口） Specification<br>Constructor Summary（构造方法）</p>
+<hr>
+<h2 id="JDK-API文档查询"><a href="#JDK-API文档查询" class="headerlink" title="JDK_API文档查询"></a>JDK_API文档查询</h2><p>[java官网] (<a href="http://java.sun.com" target="_blank" rel="external">http://java.sun.com</a> “官网”)<br>[JDK_API在线文档] (<a href="http://docs.oracle.com/javase/8/docs/api/index.html" target="_blank" rel="external">http://docs.oracle.com/javase/8/docs/api/index.html</a> “JDK_API在线文档”)</p>
+<p>J2SE 5.0 Documentation -&gt;download<br>javadocs-index.html首页-API&amp;Language-API（应用程序编程接口） Specification<br>Constructor Summary（构造方法）</p>
 <p>哈希编码：独一无二地表示一个对象，并且通过哈希编码可以找到这个对象所在的位置</p>
-<p>Object类_equals：x.equals(y) 自反、对称、传递、永恒、非空引用值x,y当且仅当x==y（即指向同一对象）时返回true</p>
-<p>重写equals方法</p>
+<hr>
+<h2 id="Object类-equals"><a href="#Object类-equals" class="headerlink" title="Object类_equals"></a>Object类_equals</h2><ul>
+<li><p>x.equals(y) 自反、对称、传递、永恒、非空引用值x,y当且仅当x==y（即指向同一对象）时返回true</p>
+</li>
+<li><p>重写equals方法</p>
+</li>
+</ul>
 <pre><code>
-public boolean equals(Object obj){  //override时记得copy下来  父类引用指向子类对象
+public boolean equals(Object obj){  //override时记得copy下来  父类引用指向子类对象(可以传入Dog,因为Dog属于动物)
     if(obj==null) return false;
     else{
         if(obj instanceof Cat){  //如果obj是Cat对象的一个引用
@@ -784,7 +797,72 @@ public boolean equals(Object obj){  //override时记得copy下来  父类引用�
     }
     return false;
 }
-</code></pre></pre></pre>
+</code></pre>
+
+<hr>
+<h2 id="对象转型casting"><a href="#对象转型casting" class="headerlink" title="对象转型casting"></a>对象转型casting</h2><ol>
+<li>一个基类的引用类型的变量可以”指向”其子类对象 (可以传入Dog,因为Dog属于动物)</li>
+<li>一个基类的引用不可以访问其子类对象新增加的成员（属性和方法）  （要一个动物，却传给它一个Dog，则Dog新增加的成员不能用了，只能用动物的成员）</li>
+<li>可以使用<code>引用变量 instanceof 类名</code>来判断该引用型变量所”指向”的对象是否属于该类或该类的子类</li>
+<li>向上转型upcasting: (子类的对象可以当做基类的对象来使用)  父类引用指向子类对象/接口的引用指向实现接口的类的对象</li>
+</ol>
+<p>eg:</p>
+<pre><code>
+
+Animal a = new Animal("name"); 
+a = new Dog("dogname","yellow");        //Dog 继承自Animal
+System.out.println(a instanceof Dog);    //true
+System.out.println(a instanceof Animal);//true
+System.out.println(a.furcolor);            //error,2.
+//若一定要访问它的furcolor
+Dog d1 = (Dog) a;                        //强制转换
+System.out.println(a.furcolor);            //yellow
+
+</code></pre>
+
+<hr>
+<h2 id="动态绑定和多态"><a href="#动态绑定和多态" class="headerlink" title="动态绑定和多态"></a>动态绑定和多态</h2><p>指在执行期间（写java）而非编译期间（写javac），判断所引用对象的实际类型，根据实际类型调用相应的方法。可扩展性好。面向对象的核心。<br>条件：</p>
+<ol>
+<li>要有继承</li>
+<li>要有重写</li>
+<li>父类引用指向子类对象</li>
+</ol>
+<hr>
+<h2 id="abstract"><a href="#abstract" class="headerlink" title="abstract"></a>abstract</h2><pre><code>
+abstract class Animal{                //有抽象方法就是抽象类，抽象类它new不出来对象
+    public abstract void enjoy ();    //抽象方法就是用来在子类里重写的
+}
+</code></pre>
+
+<hr>
+<h2 id="final"><a href="#final" class="headerlink" title="final"></a>final</h2><ul>
+<li>final变量的值不能被改变<ul>
+<li>final的成员变量</li>
+<li>final的局部变量（形参）</li>
+</ul>
+</li>
+<li>final的方法不能被重写</li>
+<li>final的类不能被继承 <code>public final class String</code></li>
+</ul>
+<hr>
+<h2 id="接口interface"><a href="#接口interface" class="headerlink" title="接口interface"></a>接口interface</h2><p>接口是一种特殊的抽象类，只包含常量和方法的定义，没有变量和方法的实现。</p>
+<p>eg:</p>
+<pre><code>
+public interface Runner{                //接口
+    public static final int id = 1;     //接口里的成员变量 只能是public static final,所以public static final写不写都一样
+    public void run();                    //写不写public都是public，只能是public且没有实现
+}
+
+class Student implements Runner{        //接口的实现
+    public void run(){
+        System.out.println("lalala");
+    }
+}
+</code></pre>
+
+
+
+</pre></pre>
       
     </div>
 
@@ -840,8 +918,8 @@ public boolean equals(Object obj){  //override时记得copy下来  父类引用�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/28/初识Java2.2_Tips_2017-7-28/" rel="next" title="初识Java2.2_Tips">
-                <i class="fa fa-chevron-left"></i> 初识Java2.2_Tips
+              <a href="/2017/07/27/初识Java2.1_基础语法_2017-7-27/" rel="next" title="初识Java2.1_基础语法">
+                <i class="fa fa-chevron-left"></i> 初识Java2.1_基础语法
               </a>
             
           </div>
@@ -850,8 +928,8 @@ public boolean equals(Object obj){  //override时记得copy下来  父类引用�
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/31/好像世界安静了/" rel="prev" title="一闪一闪亮晶晶">
-                一闪一闪亮晶晶 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/07/28/初识Java2.2_Tips_2017-7-28/" rel="prev" title="初识Java2.2_Tips">
+                初识Java2.2_Tips <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -925,7 +1003,7 @@ public boolean equals(Object obj){  //override时记得copy下来  父类引用�
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -936,7 +1014,7 @@ public boolean equals(Object obj){  //override时记得copy下来  父类引用�
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -947,7 +1025,7 @@ public boolean equals(Object obj){  //override时记得copy下来  父类引用�
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -982,7 +1060,7 @@ public boolean equals(Object obj){  //override时记得copy下来  父类引用�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Object类"><span class="nav-number">1.</span> <span class="nav-text">Object类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDK-API文档查询"><span class="nav-number">2.</span> <span class="nav-text">JDK_API文档查询</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#继承重写多态接口等"><span class="nav-number">1.</span> <span class="nav-text">继承重写多态接口等</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#访问权限"><span class="nav-number">1.1.</span> <span class="nav-text">访问权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object类"><span class="nav-number">1.2.</span> <span class="nav-text">Object类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDK-API文档查询"><span class="nav-number">1.3.</span> <span class="nav-text">JDK_API文档查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object类-equals"><span class="nav-number">1.4.</span> <span class="nav-text">Object类_equals</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象转型casting"><span class="nav-number">1.5.</span> <span class="nav-text">对象转型casting</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态绑定和多态"><span class="nav-number">1.6.</span> <span class="nav-text">动态绑定和多态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#abstract"><span class="nav-number">1.7.</span> <span class="nav-text">abstract</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#final"><span class="nav-number">1.8.</span> <span class="nav-text">final</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#接口interface"><span class="nav-number">1.9.</span> <span class="nav-text">接口interface</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1007,7 +1085,7 @@ public boolean equals(Object obj){  //override时记得copy下来  父类引用�
 <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -1043,7 +1121,7 @@ public boolean equals(Object obj){  //override时记得copy下来  父类引用�
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共12.3k字</span>
+  <span class="post-count">博客全站共9.2k字</span>
 </div>
         
 
